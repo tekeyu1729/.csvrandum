@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.csvランダム出題</title>
+    <style>
+        .container {display: flex;margin-top:12px;}
+        .left {width:20px;background-color:#f0f0f0;padding: 10px;}
+        .centor {width: 150px;background-color:#d0eaff;padding: 10px;}
+        .right {flex:1;background-color:#f0f0f0;padding: 10px;}
+        .panel{display:grid;gap:8px;margin-top:12px;}
+    </style>
+</head>
+<body>
+    <h1>.csvランダム出題</h1>
+
+    <div class="panel">
+        <input type="file" id="file" accept=".csv">
+        <button onclick="sei()">問題を生成</button>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div id="mon_1"></div>
+            <div id="mon_2"></div>
+            <div id="mon_3"></div>
+            <div id="mon_4"></div>
+            <div id="mon_5"></div>
+            <div id="mon_6"></div>
+            <div id="mon_7"></div>
+            <div id="mon_8"></div>
+            <div id="mon_9"></div>
+            <div id="mon_10"></div>
+        </div>
+        <div class="centor">
+            <div id="syu_1"></div>
+            <div id="syu_2"></div>
+            <div id="syu_3"></div>
+            <div id="syu_4"></div>
+            <div id="syu_5"></div>
+            <div id="syu_6"></div>
+            <div id="syu_7"></div>
+            <div id="syu_8"></div>
+            <div id="syu_9"></div>
+            <div id="syu_10"></div>
+        </div>
+        <div class="right">
+            <div id="kot_1"></div>
+            <div id="kot_2"></div>
+            <div id="kot_3"></div>
+            <div id="kot_4"></div>
+            <div id="kot_5"></div>
+            <div id="kot_6"></div>
+            <div id="kot_7"></div>
+            <div id="kot_8"></div>
+            <div id="kot_9"></div>
+            <div id="kot_10"></div>
+        </div>
+    </div>
+    <div class="panel">
+        <button onclick="ca()">回答</button>
+    </div>
+    <script src="random.js"></script>
+</body>
+</html>
