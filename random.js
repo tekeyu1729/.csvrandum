@@ -37,7 +37,7 @@ let data=""
         }
         function ca(){
             for (let i=0;i<10;i++){
-                document.getElementById("kot_" + (i + 1)).textContent = "("+(i+1)+")"data_1[e[i]][1]
+                document.getElementById("kot_" + (i + 1)).textContent = data_1[e[i]][1]
             }  
             e = [];          
         }
